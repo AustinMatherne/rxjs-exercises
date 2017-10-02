@@ -1,0 +1,28 @@
+{
+  "name": "crossthestreams",
+  "version": "0.0.1",
+  "description": "Learn RxJS",
+  "author": "Austin Matherne <AustinMatherne@ProtonMail.ch> (https://github.com/AustinMatherne)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AustinMatherne/crossthestreams.git"
+  },
+  "license": "WTFPL",
+  "dependencies": {
+    "rxjs": "^5.4.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "@types/sinon": "^2.3.5",
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "rx-sandbox": "^0.0.8",
+    "sinon": "^4.0.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha --compilers ts:ts-node/register src/**/*.test.ts --watch"
+  }
+}
