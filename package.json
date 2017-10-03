@@ -17,6 +17,7 @@
     "@types/sinon": "^2.3.5",
     "chai": "^4.1.2",
     "mocha": "^3.5.3",
+    "rimraf": "^2.6.2",
     "rx-sandbox": "^0.0.8",
     "sinon": "^4.0.0",
     "ts-node": "^3.3.0",
