@@ -1,6 +1,7 @@
 import {expect} from 'chai';
 import {sandbox as sinonSandbox, SinonSandbox, SinonSpy} from 'sinon';
 import {rxSandbox, RxSandboxInstance} from 'rx-sandbox';
+import 'rxjs';
 
 import {ofResult} from './1-of';
 import {fromResult} from './2-from';

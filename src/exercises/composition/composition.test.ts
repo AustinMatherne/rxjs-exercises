@@ -2,6 +2,7 @@ import {expect} from 'chai';
 import {sandbox as sinonSandbox, SinonSandbox, SinonSpy} from 'sinon';
 import {ColdObservable} from 'rxjs/testing/ColdObservable';
 import {rxSandbox, RxSandboxInstance} from 'rx-sandbox';
+import 'rxjs';
 
 import {mergeResult} from './1-merge';
 import {zipResult} from './2-zip';

@@ -2,7 +2,7 @@ import {expect} from 'chai';
 import {sandbox as sinonSandbox, SinonSandbox, SinonSpy} from 'sinon';
 import {ColdObservable} from 'rxjs/testing/ColdObservable';
 import {rxSandbox, RxSandboxInstance} from 'rx-sandbox';
-import 'rxjs/add/operator/take';
+import 'rxjs';
 
 import {mapResult} from './1-map';
 import {doResult} from './2-do';
