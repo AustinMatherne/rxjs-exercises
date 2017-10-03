@@ -1,5 +1,5 @@
-import {Observable} from 'rxjs/Observable';
-import {Scheduler} from 'rxjs/Scheduler';
+import {Observable} from "rxjs/Observable";
+import {Scheduler} from "rxjs/Scheduler";
 
 /*
   Input Observable

@@ -1,5 +1,4 @@
-import {Observable} from 'rxjs/Observable';
-
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable
@@ -12,15 +11,17 @@ import {Observable} from 'rxjs/Observable';
 
 const ghostLogger = (obs: Observable<string>): Observable<string> => {
   const ghosts: {[k: string]: string} = {
-    LIBRARY: 'Eleanor Twitty',
-    HOTEL: 'Slimer',
-    TAXI: 'Dawdle',
-    GOZER: 'Tubby Soft-Squeeze'
+    GOZER: "Tubby Soft-Squeeze",
+    HOTEL: "Slimer",
+    LIBRARY: "Eleanor Twitty",
+    TAXI: "Dawdle",
   };
 
-  return obs.do(value => {
+  return obs.do((value) => {
     const ghost = ghosts[value.toUpperCase()];
-    ghost ? console.log(ghost) : null;
+    if (ghost) {
+      console.log(ghost);
+    }
   });
 };
 

@@ -1,4 +1,4 @@
-import {Observable} from 'rxjs/Observable';
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable
@@ -10,5 +10,5 @@ import {Observable} from 'rxjs/Observable';
 */
 
 export const findResult = (obs: Observable<string>) => {
-  return obs.find(l => l === 'd');
+  return obs.find((l) => l === "d");
 };

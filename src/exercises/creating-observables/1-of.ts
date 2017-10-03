@@ -1,4 +1,4 @@
-import {Observable} from 'rxjs/Observable';
+import {Observable} from "rxjs/Observable";
 
 /*
   Expected Observable
@@ -7,4 +7,4 @@ import {Observable} from 'rxjs/Observable';
   http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-of
 */
 
-export const ofResult = Observable.of('hello', 'world');
+export const ofResult = Observable.of("hello", "world");

@@ -1,4 +1,4 @@
-import {Observable} from 'rxjs/Observable';
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable
@@ -10,5 +10,5 @@ import {Observable} from 'rxjs/Observable';
 */
 
 export const expandResult = (obs: Observable<number>) => {
-  return obs.expand(x => x >= 2 ? Observable.empty() : Observable.of(x + 1));
+  return obs.expand((x) => x >= 2 ? Observable.empty() : Observable.of(x + 1));
 };
