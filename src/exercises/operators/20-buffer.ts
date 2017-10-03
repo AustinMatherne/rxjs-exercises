@@ -1,6 +1,5 @@
 import {Observable} from 'rxjs/Observable';
 import {Scheduler} from 'rxjs/Scheduler';
-import 'rxjs/add/operator/buffer';
 
 /*
   Input Observable

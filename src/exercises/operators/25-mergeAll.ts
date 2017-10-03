@@ -1,5 +1,4 @@
 import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/mergeAll';
 
 /*
   Input Observable

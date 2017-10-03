@@ -1,7 +1,6 @@
 import {Observable} from 'rxjs/Observable';
 import {empty} from 'rxjs/Observable/empty';
 import {of} from 'rxjs/Observable/of';
-import 'rxjs/add/operator/expand';
 
 /*
   Input Observable
