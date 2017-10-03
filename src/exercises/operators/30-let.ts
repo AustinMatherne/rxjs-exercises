@@ -1,6 +1,4 @@
-import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/let';
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable
@@ -12,16 +10,18 @@ import 'rxjs/add/operator/let';
 */
 
 const ghostLogger = (obs: Observable<string>): Observable<string> => {
-  const ghosts = {
-    LIBRARY: 'Eleanor Twitty',
-    HOTEL: 'Slimer',
-    TAXI: 'Dawdle',
-    GOZER: 'Tubby Soft-Squeeze'
+  const ghosts: {[k: string]: string} = {
+    GOZER: "Tubby Soft-Squeeze",
+    HOTEL: "Slimer",
+    LIBRARY: "Eleanor Twitty",
+    TAXI: "Dawdle",
   };
 
-  return obs.do(value => {
+  return obs.do((value) => {
     const ghost = ghosts[value.toUpperCase()];
-    ghost ? console.log(ghost) : null;
+    if (ghost) {
+      console.log(ghost);
+    }
   });
 };
 

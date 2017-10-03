@@ -1,4 +1,4 @@
-import {range} from 'rxjs/Observable/range';
+import {Observable} from "rxjs/Observable";
 
 /*
   Expected Observable
@@ -7,4 +7,4 @@ import {range} from 'rxjs/Observable/range';
   http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-range
 */
 
-export const rangeResult = range(96, 6);
+export const rangeResult = Observable.range(96, 6);

@@ -1,5 +1,4 @@
-import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable
@@ -11,5 +10,5 @@ import 'rxjs/add/operator/map';
 */
 
 export const mapResult = (obs: Observable<number>) => {
-  return obs.map(i => i * 10);
+  return obs.map((i) => i * 10);
 };

@@ -1,5 +1,4 @@
-import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/scan';
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable

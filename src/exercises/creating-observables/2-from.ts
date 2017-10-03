@@ -1,4 +1,4 @@
-import {from} from 'rxjs/Observable/from';
+import {Observable} from "rxjs/Observable";
 
 /*
   Expected Observable
@@ -9,4 +9,4 @@ import {from} from 'rxjs/Observable/from';
 
 const numbers = [1, 2, 3];
 
-export const fromResult = from(numbers);
+export const fromResult = Observable.from(numbers);

@@ -1,5 +1,4 @@
-import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/filter';
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable
@@ -11,5 +10,5 @@ import 'rxjs/add/operator/filter';
 */
 
 export const filterResult = (obs: Observable<number>) => {
-  return obs.filter(i => !(i % 2));
+  return obs.filter((i) => !(i % 2));
 };

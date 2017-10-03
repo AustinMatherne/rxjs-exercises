@@ -1,5 +1,4 @@
-import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/groupBy'
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable
@@ -14,5 +13,5 @@ import 'rxjs/add/operator/groupBy'
 */
 
 export const groupByResult = (obs: Observable<{id: number}>) => {
-  return obs.groupBy(value => value.id);
+  return obs.groupBy((value) => value.id);
 };

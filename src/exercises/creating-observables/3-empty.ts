@@ -1,4 +1,4 @@
-import {empty} from 'rxjs/Observable/empty';
+import {Observable} from "rxjs/Observable";
 
 /*
   Expected Observable
@@ -7,4 +7,4 @@ import {empty} from 'rxjs/Observable/empty';
   http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-empty
 */
 
-export const emptyResult = empty();
+export const emptyResult = Observable.empty();

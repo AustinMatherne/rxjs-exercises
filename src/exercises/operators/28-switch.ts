@@ -1,5 +1,4 @@
-import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/switch';
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable

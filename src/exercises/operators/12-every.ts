@@ -1,5 +1,4 @@
-import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/every';
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable
@@ -13,5 +12,5 @@ import 'rxjs/add/operator/every';
 */
 
 export const everyResult = (obs: Observable<number>) => {
-  return obs.every(i => i >= 0);
+  return obs.every((i) => i >= 0);
 };

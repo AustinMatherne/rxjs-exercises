@@ -1,6 +1,5 @@
-import {Observable} from 'rxjs/Observable';
-import {Scheduler} from 'rxjs/Scheduler';
-import 'rxjs/add/operator/delay';
+import {Observable} from "rxjs/Observable";
+import {Scheduler} from "rxjs/Scheduler";
 
 /*
   Input Observable

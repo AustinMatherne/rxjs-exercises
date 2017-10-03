@@ -1,5 +1,4 @@
-import {Observable} from 'rxjs/Observable';
-import {combineLatest} from 'rxjs/Observable/combineLatest';
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable
@@ -12,5 +11,5 @@ import {combineLatest} from 'rxjs/Observable/combineLatest';
 */
 
 export const combineLatestResult = (obs1: Observable<string>, obs2: Observable<string>) => {
-  return combineLatest(obs1, obs2);
+  return Observable.combineLatest(obs1, obs2);
 };

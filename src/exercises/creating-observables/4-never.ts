@@ -1,4 +1,4 @@
-import {never} from 'rxjs/Observable/never';
+import {Observable} from "rxjs/Observable";
 
 /*
   Expected Observable
@@ -7,4 +7,4 @@ import {never} from 'rxjs/Observable/never';
   http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-never
 */
 
-export const neverResult = never();
+export const neverResult = Observable.never();

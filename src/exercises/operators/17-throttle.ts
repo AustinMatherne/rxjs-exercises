@@ -1,6 +1,4 @@
-import {Observable} from 'rxjs/Observable';
-import {Scheduler} from 'rxjs/Scheduler';
-import 'rxjs/add/operator/throttle';
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable

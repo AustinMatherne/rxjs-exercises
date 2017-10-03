@@ -1,5 +1,5 @@
-import {interval} from 'rxjs/Observable/interval';
-import {Scheduler} from 'rxjs/Scheduler';
+import {Observable} from "rxjs/Observable";
+import {Scheduler} from "rxjs/Scheduler";
 
 /*
   Expected Observable
@@ -9,5 +9,5 @@ import {Scheduler} from 'rxjs/Scheduler';
 */
 
 export const intervalResult = (scheduler: Scheduler) => {
-  return interval(3, scheduler);
+  return Observable.interval(3, scheduler);
 };

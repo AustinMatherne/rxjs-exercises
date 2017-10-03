@@ -1,5 +1,4 @@
-import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/partition'
+import {Observable} from "rxjs/Observable";
 
 /*
   Input Observable
@@ -12,5 +11,5 @@ import 'rxjs/add/operator/partition'
 */
 
 export const partitionResult = (obs: Observable<number>) => {
-  return obs.partition(value => value % 2 === 0);
+  return obs.partition((value) => value % 2 === 0);
 };
