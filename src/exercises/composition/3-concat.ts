@@ -1,5 +1,4 @@
 import {Observable} from 'rxjs/Observable';
-import {concat} from 'rxjs/Observable/concat';
 
 /*
   Input Observable
@@ -12,5 +11,5 @@ import {concat} from 'rxjs/Observable/concat';
 */
 
 export const concatResult = (obs1: Observable<string>, obs2: Observable<string>) => {
-  return concat(obs1, obs2);
+  return Observable.concat(obs1, obs2);
 };

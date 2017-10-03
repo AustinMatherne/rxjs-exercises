@@ -1,5 +1,4 @@
 import {Observable} from 'rxjs/Observable';
-import {zip} from 'rxjs/Observable/zip';
 
 /*
   Input Observable
@@ -12,5 +11,5 @@ import {zip} from 'rxjs/Observable/zip';
 */
 
 export const zipResult = (obs1: Observable<string>, obs2: Observable<string>) => {
-  return zip(obs1, obs2);
+  return Observable.zip(obs1, obs2);
 };

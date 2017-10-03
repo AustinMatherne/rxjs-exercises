@@ -1,5 +1,4 @@
 import {Observable} from 'rxjs/Observable';
-import {of} from 'rxjs/Observable/of';
 
 /*
   Input Observable
@@ -11,5 +10,5 @@ import {of} from 'rxjs/Observable/of';
 */
 
 export const catchResult = (obs: Observable<string>) => {
-  return obs.catch(err => of('error handled'));
+  return obs.catch(() => Observable.of('error handled'));
 };

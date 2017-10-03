@@ -1,4 +1,4 @@
-import {timer} from 'rxjs/Observable/timer';
+import {Observable} from 'rxjs/Observable';
 import {Scheduler} from 'rxjs/Scheduler';
 
 /*
@@ -9,5 +9,5 @@ import {Scheduler} from 'rxjs/Scheduler';
 */
 
 export const timerResult = (scheduler: Scheduler) => {
-  return timer(3, 2, scheduler);
+  return Observable.timer(3, 2, scheduler);
 };

@@ -1,4 +1,4 @@
-import {_throw} from 'rxjs/Observable/throw';
+import {Observable} from 'rxjs/Observable';
 
 /*
   Expected Observable
@@ -7,4 +7,4 @@ import {_throw} from 'rxjs/Observable/throw';
   http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-throw
 */
 
-export const throwResult = _throw('oh no!');
+export const throwResult = Observable.throw('oh no!');

@@ -1,4 +1,4 @@
-import {bindCallback} from 'rxjs/Observable/bindCallback';
+import {Observable} from 'rxjs/Observable';
 
 /*
   Expected Observable
@@ -13,4 +13,4 @@ import {bindCallback} from 'rxjs/Observable/bindCallback';
 
 const func = (x: string, cb: (value: string) => void) => cb(x);
 
-export const bindCallbackResult = bindCallback(func);
+export const bindCallbackResult = Observable.bindCallback(func);

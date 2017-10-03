@@ -1,5 +1,4 @@
-import {defer} from 'rxjs/Observable/defer';
-import {of} from 'rxjs/Observable/of';
+import {Observable} from 'rxjs/Observable';
 
 /*
   Expected Observable
@@ -8,4 +7,4 @@ import {of} from 'rxjs/Observable/of';
   http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-defer
 */
 
-export const deferResult = defer(() => of(Math.random()));
+export const deferResult = Observable.defer(() => Observable.of(Math.random()));
