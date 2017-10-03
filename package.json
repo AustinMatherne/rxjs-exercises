@@ -1,11 +1,11 @@
 {
-  "name": "crossthestreams",
+  "name": "rxjs-exercises",
   "version": "0.0.1",
   "description": "Learn RxJS",
   "author": "Austin Matherne <AustinMatherne@ProtonMail.ch> (https://github.com/AustinMatherne)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AustinMatherne/crossthestreams.git"
+    "url": "https://github.com/AustinMatherne/rxjs-exercises.git"
   },
   "license": "WTFPL",
   "dependencies": {
@@ -23,6 +23,7 @@
     "typescript": "^2.5.3"
   },
   "scripts": {
-    "test": "mocha --compilers ts:ts-node/register src/**/*.test.ts --watch"
+    "test": "mocha --compilers ts:ts-node/register src/**/*.test.ts",
+    "test:watch": "npm test -- --watch"
   }
 }
