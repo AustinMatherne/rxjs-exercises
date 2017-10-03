@@ -1,4 +1,3 @@
-import {expect} from 'chai';
 import {sandbox as sinonSandbox, SinonSandbox, SinonSpy} from 'sinon';
 import {ColdObservable} from 'rxjs/testing/ColdObservable';
 import {rxSandbox, RxSandboxInstance} from 'rx-sandbox';

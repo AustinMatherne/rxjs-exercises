@@ -1,5 +1,6 @@
 import {Observable} from 'rxjs/Observable';
 
+
 /*
   Input Observable
   cold('-a-b-c-d-e-', {a: 'library', b: 'hotel', c: 'bob', d: 'taxi', e: 'gozer'})
@@ -10,7 +11,7 @@ import {Observable} from 'rxjs/Observable';
 */
 
 const ghostLogger = (obs: Observable<string>): Observable<string> => {
-  const ghosts = {
+  const ghosts: {[k: string]: string} = {
     LIBRARY: 'Eleanor Twitty',
     HOTEL: 'Slimer',
     TAXI: 'Dawdle',
