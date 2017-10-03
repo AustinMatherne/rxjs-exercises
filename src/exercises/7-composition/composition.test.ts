@@ -51,7 +51,7 @@ describe('7 composition:', () => {
 
     rx.flush();
 
-    marbleAssert(result).to.equal(expected);
+    marbleAssert(result).to.equal(<any>expected);
   });
 
   it('3 composition concat', () => {
@@ -71,7 +71,7 @@ describe('7 composition:', () => {
 
     rx.flush();
 
-    marbleAssert(result).to.equal(expected);
+    marbleAssert(result).to.equal(<any>expected);
   });
 
   it('5 composition withLatestFrom', () => {
@@ -80,7 +80,7 @@ describe('7 composition:', () => {
 
     rx.flush();
 
-    marbleAssert(result).to.equal(expected);
+    marbleAssert(result).to.equal(<any>expected);
   });
 
   it('6 composition startWith', () => {
@@ -106,14 +106,14 @@ describe('7 composition:', () => {
   });
 
   it('8 composition groupBy', () => {
-    const dataSource$ = rx.cold('a-b-c-|', { a: {id: 'blue'}, b: {id: 'green'}, c: {id: 'blue'}});
+    const dataSource$ = rx.cold('a-b-c-|', {a: {id: 5}, b: {id: 2}, c: {id: 5}});
+    const expected1 = rx.e('     a---c-|', {a: {id: 5}, c: {id: 5}});
+    const expected2 = rx.e('       b---|', {b: {id: 2}});
+    const expected = rx.e('      a-b---|', {a: expected1, b: expected2});
     const result = rx.getMessages(groupByResult(dataSource$));
-    const expected1 = rx.e('a---c-|', {a: {id: 'blue'}, c: {id: 'blue'}});
-    const expected2 = rx.e('--b---|', {b: {id: 'green'}});
-    const expected = rx.e(' a-b---|', {a: expected1, b: expected2 });
 
     rx.flush();
 
-    marbleAssert(result).to.equal(expected);
+    marbleAssert(result).to.equal(<any>expected);
   });
 });
