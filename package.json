@@ -18,7 +18,7 @@
     "chai": "^4.1.2",
     "mocha": "^4.0.0",
     "rimraf": "^2.6.2",
-    "rx-sandbox": "^0.0.8",
+    "rx-sandbox": "^0.0.9",
     "sinon": "^4.0.0",
     "ts-node": "^3.3.0",
     "tslint": "^5.7.0",
