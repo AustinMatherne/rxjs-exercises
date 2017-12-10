@@ -20,7 +20,7 @@
     "rimraf": "^2.6.2",
     "rx-sandbox": "^0.0.8",
     "sinon": "^4.0.0",
-    "ts-node": "^3.3.0",
+    "ts-node": "^4.0.0",
     "tslint": "^5.7.0",
     "typescript": "^2.5.3"
   },
